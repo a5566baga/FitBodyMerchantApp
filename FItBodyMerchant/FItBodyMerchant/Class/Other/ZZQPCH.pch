@@ -1,0 +1,35 @@
+//
+//  ZZQPCH.pch
+//  FItBodyUser
+//
+//  Created by ben on 17/3/11.
+//  Copyright © 2017年 张增强. All rights reserved.
+//
+
+#ifndef ZZQPCH_pch
+#define ZZQPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//第三方内容
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "YYKit.h"
+#import "MJExtension.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import <AVOSCloud/AVOSCloud.h>
+
+
+//字体名字
+#define TITLE_FONT @"Songti SC"
+#define CONTENT_FONT @"HYQingYaTiJ"
+#define LITTER_TITLE_FONT @"HYQuanTangShiJ"
+#define BLOD_ENG @"DINSchrift"
+
+//宽高
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#endif /* ZZQPCH_pch */

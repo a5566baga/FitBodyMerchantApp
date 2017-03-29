@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ZZQLoginViewController.h"
+#import "ZZQHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //注册LearnCloud
+    [AVOSCloud setApplicationId:@"xqDPunJj8jQcQk8exktvw5UB-gzGzoHsz" clientKey:@"YqkYVhUj2pWRx4r7hQ3gmv1v"];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+//    [AVUser logOut];
+    //就是之前登陆了
+    if ([AVUser currentUser]){
+        //利用learnCloud再登录
+        ZZQHomeViewController * homeVC = [[ZZQHomeViewController alloc] init];
+        self.window.rootViewController = homeVC;
+    }else{
+        ZZQLoginViewController * loginVC = [[ZZQLoginViewController alloc] init];
+        self.window.rootViewController = loginVC;
+    }
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

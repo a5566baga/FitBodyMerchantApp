@@ -16,6 +16,16 @@
 		B57070F11E891CFF003DE3F8 /* ZZQNetAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070DA1E891CFF003DE3F8 /* ZZQNetAlertView.m */; };
 		B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070DC1E891CFF003DE3F8 /* ZZQTabBarViewController.m */; };
 		B57070F31E891CFF003DE3F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070EC1E891CFF003DE3F8 /* AppDelegate.m */; };
+		B57070F71E8BD46E003DE3F8 /* ZZQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070F51E8BD46E003DE3F8 /* ZZQLoginViewController.m */; };
+		B57070F81E8BD46E003DE3F8 /* ZZQLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57070F61E8BD46E003DE3F8 /* ZZQLoginViewController.xib */; };
+		B57070FF1E8BD875003DE3F8 /* ZZQRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070FD1E8BD875003DE3F8 /* ZZQRegisterViewController.m */; };
+		B57071001E8BD875003DE3F8 /* ZZQRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57070FE1E8BD875003DE3F8 /* ZZQRegisterViewController.xib */; };
+		B57071071E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57071051E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m */; };
+		B57071081E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57071061E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib */; };
+		B570710C1E8BD8C8003DE3F8 /* ZZQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B570710A1E8BD8C8003DE3F8 /* ZZQHomeViewController.m */; };
+		B570710D1E8BD8C8003DE3F8 /* ZZQHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B570710B1E8BD8C8003DE3F8 /* ZZQHomeViewController.xib */; };
+		B57071131E8BE663003DE3F8 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B57071101E8BE663003DE3F8 /* ProgressHUD.bundle */; };
+		B57071141E8BE663003DE3F8 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B57071121E8BE663003DE3F8 /* ProgressHUD.m */; };
 		CAA63AABB86CAA07697AF1A2 /* libPods-FItBodyMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +49,21 @@
 		B57070EB1E891CFF003DE3F8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B57070EC1E891CFF003DE3F8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B57070ED1E891CFF003DE3F8 /* ZZQPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQPCH.pch; sourceTree = "<group>"; };
+		B57070F41E8BD46E003DE3F8 /* ZZQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQLoginViewController.h; sourceTree = "<group>"; };
+		B57070F51E8BD46E003DE3F8 /* ZZQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQLoginViewController.m; sourceTree = "<group>"; };
+		B57070F61E8BD46E003DE3F8 /* ZZQLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQLoginViewController.xib; sourceTree = "<group>"; };
+		B57070FC1E8BD875003DE3F8 /* ZZQRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRegisterViewController.h; sourceTree = "<group>"; };
+		B57070FD1E8BD875003DE3F8 /* ZZQRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRegisterViewController.m; sourceTree = "<group>"; };
+		B57070FE1E8BD875003DE3F8 /* ZZQRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQRegisterViewController.xib; sourceTree = "<group>"; };
+		B57071041E8BD8B0003DE3F8 /* ZZQLoginUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQLoginUserViewController.h; sourceTree = "<group>"; };
+		B57071051E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQLoginUserViewController.m; sourceTree = "<group>"; };
+		B57071061E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQLoginUserViewController.xib; sourceTree = "<group>"; };
+		B57071091E8BD8C8003DE3F8 /* ZZQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQHomeViewController.h; sourceTree = "<group>"; };
+		B570710A1E8BD8C8003DE3F8 /* ZZQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQHomeViewController.m; sourceTree = "<group>"; };
+		B570710B1E8BD8C8003DE3F8 /* ZZQHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQHomeViewController.xib; sourceTree = "<group>"; };
+		B57071101E8BE663003DE3F8 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		B57071111E8BE663003DE3F8 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		B57071121E8BE663003DE3F8 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		E0F6B5FFB0220B7DCAB672B5 /* Pods-FItBodyMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		F67672C85008100A0244640A /* Pods-FItBodyMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B57070D11E891CFF003DE3F8 /* Class */,
+				B570710E1E8BE663003DE3F8 /* thirdKit */,
 				B57070BA1E87611A003DE3F8 /* Supporting Files */,
 			);
 			path = FItBodyMerchant;
@@ -144,6 +170,9 @@
 		B57070DE1E891CFF003DE3F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B57071091E8BD8C8003DE3F8 /* ZZQHomeViewController.h */,
+				B570710A1E8BD8C8003DE3F8 /* ZZQHomeViewController.m */,
+				B570710B1E8BD8C8003DE3F8 /* ZZQHomeViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +204,15 @@
 		B57070E21E891CFF003DE3F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B57070F41E8BD46E003DE3F8 /* ZZQLoginViewController.h */,
+				B57070F51E8BD46E003DE3F8 /* ZZQLoginViewController.m */,
+				B57070F61E8BD46E003DE3F8 /* ZZQLoginViewController.xib */,
+				B57070FC1E8BD875003DE3F8 /* ZZQRegisterViewController.h */,
+				B57070FD1E8BD875003DE3F8 /* ZZQRegisterViewController.m */,
+				B57070FE1E8BD875003DE3F8 /* ZZQRegisterViewController.xib */,
+				B57071041E8BD8B0003DE3F8 /* ZZQLoginUserViewController.h */,
+				B57071051E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m */,
+				B57071061E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +279,25 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		B570710E1E8BE663003DE3F8 /* thirdKit */ = {
+			isa = PBXGroup;
+			children = (
+				B570710F1E8BE663003DE3F8 /* ProgressHUD */,
+			);
+			name = thirdKit;
+			path = Class/thirdKit;
+			sourceTree = "<group>";
+		};
+		B570710F1E8BE663003DE3F8 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B57071101E8BE663003DE3F8 /* ProgressHUD.bundle */,
+				B57071111E8BE663003DE3F8 /* ProgressHUD.h */,
+				B57071121E8BE663003DE3F8 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		CA5DE6B1A6EA9285AE8FC67B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +336,7 @@
 		B57070AF1E87611A003DE3F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZZQ;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "张增强";
 				TargetAttributes = {
@@ -312,8 +370,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57071081E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib in Resources */,
+				B570710D1E8BD8C8003DE3F8 /* ZZQHomeViewController.xib in Resources */,
+				B57071131E8BE663003DE3F8 /* ProgressHUD.bundle in Resources */,
 				B57070CA1E87611A003DE3F8 /* LaunchScreen.storyboard in Resources */,
+				B57070F81E8BD46E003DE3F8 /* ZZQLoginViewController.xib in Resources */,
 				B57070C71E87611A003DE3F8 /* Assets.xcassets in Resources */,
+				B57071001E8BD875003DE3F8 /* ZZQRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,13 +435,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57070F71E8BD46E003DE3F8 /* ZZQLoginViewController.m in Sources */,
 				B57070EF1E891CFF003DE3F8 /* ZZQBaseTabBar.m in Sources */,
+				B57070FF1E8BD875003DE3F8 /* ZZQRegisterViewController.m in Sources */,
 				B57070F01E891CFF003DE3F8 /* ZZQBaseViewController.m in Sources */,
+				B570710C1E8BD8C8003DE3F8 /* ZZQHomeViewController.m in Sources */,
 				B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */,
+				B57071141E8BE663003DE3F8 /* ProgressHUD.m in Sources */,
 				B57070BC1E87611A003DE3F8 /* main.m in Sources */,
 				B57070EE1E891CFF003DE3F8 /* ZZQBaseNavViewController.m in Sources */,
 				B57070F11E891CFF003DE3F8 /* ZZQNetAlertView.m in Sources */,
 				B57070F31E891CFF003DE3F8 /* AppDelegate.m in Sources */,
+				B57071071E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,14 +24,14 @@
 #pragma ================= 懒加载
 - (NSArray *)tabBarNorArray{
     if(!_tabBarNorArray){
-        _tabBarNorArray = [NSArray arrayWithObjects:@"hj_main_bottom_home_nol", @"hj_main_bottom_steward_nol", @"hj_main_bottom_mine_nol", nil];
+        _tabBarNorArray = [NSArray arrayWithObjects:@"check_normal", @"orders_normal", @"me_normal", nil];
     }
     return _tabBarNorArray;
 }
 
 - (NSArray *)tabBarSelArray{
     if(!_tabBarSelArray){
-        _tabBarSelArray = [NSArray arrayWithObjects:@"hj_main_bottom_home_sel", @"hj_main_bottom_steward_sel", @"hj_main_bottom_mine_sel", nil];
+        _tabBarSelArray = [NSArray arrayWithObjects:@"check_sel", @"orders_sel", @"me_sel", nil];
     }
     return _tabBarSelArray;
 }

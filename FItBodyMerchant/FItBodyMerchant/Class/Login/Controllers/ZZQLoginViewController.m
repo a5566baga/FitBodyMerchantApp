@@ -14,6 +14,8 @@
 
 @property(nonatomic, strong)ZZQRegisterViewController * registerVC;
 @property(nonatomic, strong)ZZQLoginUserViewController * loginUserVC;
+@property (weak, nonatomic) IBOutlet UIButton *registerBtn;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -23,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.frame = [UIScreen mainScreen].bounds;
+    _registerBtn.layer.cornerRadius = 10;
+    _loginBtn.layer.cornerRadius = 10;
 }
 - (IBAction)registerAction:(UIButton *)sender {
     _registerVC = [[ZZQRegisterViewController alloc] init];

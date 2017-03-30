@@ -22,7 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:0.03 green:0.76 blue:0.67 alpha:1.00]];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
 }
 
@@ -30,8 +31,8 @@
     [super pushViewController:viewController animated:animated];
     if(self.childViewControllers.count>1){
         UIButton * backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 33, 33)];
-        [backBtn setImage:[UIImage imageNamed:@"back_black"] forState:UIControlStateNormal];
-        [backBtn setImage:[UIImage imageNamed:@"back_white"] forState:UIControlStateHighlighted];
+        [backBtn setImage:[UIImage imageNamed:@"icon_account_navigationBar_back"] forState:UIControlStateNormal];
+        [backBtn setImage:[UIImage imageNamed:@"icon_account_navigationBar_back"] forState:UIControlStateHighlighted];
         [backBtn addTarget:self action:@selector(backAction:vc:) forControlEvents:UIControlEventTouchUpInside];
         
         UIBarButtonItem * backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];

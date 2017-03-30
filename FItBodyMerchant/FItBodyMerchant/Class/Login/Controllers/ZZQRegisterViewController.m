@@ -7,12 +7,13 @@
 //
 
 #import "ZZQRegisterViewController.h"
-#import "ZZQLoginUserViewController.h"
+#import "ZZQVerifyViewController.h"
 
-@interface ZZQRegisterViewController ()
+@interface ZZQRegisterViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -21,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _phoneTextField.delegate = self;
+    _passwordTextField.delegate = self;
+    _emailTextField.delegate = self;
+    _loginBtn.layer.cornerRadius = 10;
 }
 - (IBAction)closeAction:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:^{
@@ -36,10 +41,9 @@
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         if(succeeded){
             [ProgressHUD showSuccess:@"注册成功"];
-            [self dismissViewControllerAnimated:YES completion:^{
-               [self presentViewController:[[ZZQLoginUserViewController alloc] init] animated:YES completion:^{
-                   
-               }];
+            ZZQVerifyViewController * verifyVC = [[ZZQVerifyViewController alloc] init];
+            [self presentViewController:verifyVC animated:YES completion:^{
+                
             }];
         }else{
             if (error.code == 125) {
@@ -60,6 +64,11 @@
     [_emailTextField resignFirstResponder];
     [_phoneTextField resignFirstResponder];
     [_passwordTextField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

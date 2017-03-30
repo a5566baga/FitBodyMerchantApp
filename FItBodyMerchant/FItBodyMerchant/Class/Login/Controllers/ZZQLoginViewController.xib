@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZZQLoginViewController">
             <connections>
+                <outlet property="loginBtn" destination="dlQ-cz-CJW" id="ejI-KV-XzU"/>
+                <outlet property="registerBtn" destination="pJU-8i-BlN" id="HWi-BI-FIo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,25 +21,67 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-8i-BlN">
-                    <rect key="frame" x="82" y="545" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="注册"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-8i-BlN">
+                    <rect key="frame" x="60" y="467" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.33333333333333331" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Rqe-pE-KUi"/>
+                        <constraint firstAttribute="width" constant="120" id="e79-eG-WLu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="我要注册">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="3Up-dq-MFX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-cz-CJW">
-                    <rect key="frame" x="243" y="545" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="登录"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="e7A-J2-C1Z">
+                    <rect key="frame" x="0.0" y="60" width="375" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="1vW-TJ-Cva"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitBody健身餐商家端" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q4-Jv-1qm">
+                    <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.33333333333333331" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-cz-CJW">
+                    <rect key="frame" x="195" y="467" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.33333333333333331" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="我要登录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="KYZ-VK-b5f"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-459" y="-83"/>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pJU-8i-BlN" secondAttribute="bottom" constant="160" id="6eM-tt-hwx"/>
+                <constraint firstItem="e7A-J2-C1Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7qw-nY-kVn"/>
+                <constraint firstItem="e7A-J2-C1Z" firstAttribute="top" secondItem="8Q4-Jv-1qm" secondAttribute="bottom" id="JUP-TT-fNx"/>
+                <constraint firstItem="8Q4-Jv-1qm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lne-vY-Nre"/>
+                <constraint firstAttribute="trailing" secondItem="8Q4-Jv-1qm" secondAttribute="trailing" id="OLm-2C-DyO"/>
+                <constraint firstItem="e7A-J2-C1Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="XMg-1g-Nmd"/>
+                <constraint firstItem="dlQ-cz-CJW" firstAttribute="height" secondItem="pJU-8i-BlN" secondAttribute="height" id="aHb-gB-8YZ"/>
+                <constraint firstAttribute="trailing" secondItem="e7A-J2-C1Z" secondAttribute="trailing" id="cNF-NE-rFO"/>
+                <constraint firstItem="pJU-8i-BlN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="cTa-eH-6aV"/>
+                <constraint firstAttribute="trailing" secondItem="dlQ-cz-CJW" secondAttribute="trailing" constant="60" id="jn2-nx-avr"/>
+                <constraint firstAttribute="bottom" secondItem="dlQ-cz-CJW" secondAttribute="bottom" constant="160" id="r2e-ea-EBE"/>
+                <constraint firstItem="8Q4-Jv-1qm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="v5R-Nq-DZs"/>
+                <constraint firstItem="dlQ-cz-CJW" firstAttribute="width" secondItem="pJU-8i-BlN" secondAttribute="width" id="z24-3N-OOk"/>
+            </constraints>
+            <point key="canvasLocation" x="-563.5" y="-79.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="timg" width="650" height="288"/>
+    </resources>
 </document>

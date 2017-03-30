@@ -7,11 +7,12 @@
 //
 
 #import "ZZQLoginUserViewController.h"
-#import "ZZQHomeViewController.h"
+#import "ZZQTabBarViewController.h"
 
-@interface ZZQLoginUserViewController ()
+@interface ZZQLoginUserViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -20,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _loginBtn.layer.cornerRadius = 10;
+    _phoneTextField.delegate = self;
+    _passwordTextField.delegate = self;
 }
 - (IBAction)close:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:^{
@@ -31,8 +35,8 @@
         if (error == nil) {
             [ProgressHUD showSuccess:@"登录成功"];
             [self dismissViewControllerAnimated:YES completion:^{
-                ZZQHomeViewController * homeVC = [[ZZQHomeViewController alloc] init];
-                [UIApplication sharedApplication].keyWindow.rootViewController = homeVC;
+                ZZQTabBarViewController * tabBarVC = [[ZZQTabBarViewController alloc] init];
+                [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
             }];
         }else{
             if (error.code == 210){
@@ -48,6 +52,11 @@
             }
         }
     }];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_phoneTextField resignFirstResponder];
+    [_passwordTextField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

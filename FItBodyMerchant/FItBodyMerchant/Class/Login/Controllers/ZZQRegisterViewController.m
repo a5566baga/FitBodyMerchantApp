@@ -41,6 +41,7 @@
     user.password = _passwordTextField.text;
     user.mobilePhoneNumber = _phoneTextField.text;
     user.email = _emailTextField.text;
+    _merchant = [[ZZQMerchant alloc] init];
     _merchant.phone = _phoneTextField.text;
     _merchant.email = _emailTextField.text;
     _merchant.password = _passwordTextField.text;
@@ -50,7 +51,7 @@
             [ProgressHUD showSuccess:@"注册成功"];
             ZZQVerifyViewController * verifyVC = [[ZZQVerifyViewController alloc] init];
             [self presentViewController:verifyVC animated:YES completion:^{
-                [verifyVC setMerchant:_merchant];
+                [verifyVC setNewMerchant:_merchant];
             }];
         }else{
             if (error.code == 125) {
@@ -65,11 +66,6 @@
         }
         
     }];
-    ZZQVerifyViewController * verifyVC = [[ZZQVerifyViewController alloc] init];
-    [self presentViewController:verifyVC animated:YES completion:^{
-        [verifyVC setMerchant:_merchant];
-     }];
-
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

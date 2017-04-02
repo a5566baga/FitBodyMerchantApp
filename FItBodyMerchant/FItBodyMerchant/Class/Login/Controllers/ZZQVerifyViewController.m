@@ -9,9 +9,9 @@
 #import "ZZQVerifyViewController.h"
 #import <CTAssetsPickerController/CTAssetsGridSelectedView.h>
 #import "ZZQLoginUserViewController.h"
+#import "ZZQTabBarViewController.h"
 
-
-@interface ZZQVerifyViewController ()<CTAssetsPickerControllerDelegate>
+@interface ZZQVerifyViewController ()<CTAssetsPickerControllerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *storeName;
 @property (weak, nonatomic) IBOutlet UITextField *userTrueName;
 @property (weak, nonatomic) IBOutlet UITextField *userCard;
@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *submitBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 @property (weak, nonatomic) IBOutlet UIImageView *headSmallImage;
+//商家模型
+@property(nonatomic, strong)ZZQMerchant * merchant;
+
 
 @property (nonatomic, strong) PHImageRequestOptions *requestOptions;
 @property (nonatomic, strong)CTAssetsPickerController * picker;
@@ -36,6 +39,10 @@
 }
 
 - (void)initView{
+    _storeName.delegate = self;
+    _userTrueName.delegate = self;
+    _userBankCard.delegate = self;
+    _userCard.delegate = self;
     _cardBackBtn.layer.cornerRadius = 10;
     _cardBackBtn.layer.masksToBounds = YES;
     _cardFrontBtn.layer.cornerRadius = 10;
@@ -144,15 +151,74 @@
     NSString * trueName = _userTrueName.text;
     NSString * bankCard = _userBankCard.text;
     NSString * idCard = _userCard.text;
-    if ([storeName isEqualToString:@""] && [trueName isEqualToString:@""] && [bankCard isEqualToString:@""] && [idCard isEqualToString:@""]
+    
+    if (![storeName isEqualToString:@""] && ![trueName isEqualToString:@""] && ![bankCard isEqualToString:@""] && ![idCard isEqualToString:@""]
         && _merchant.protrait != nil && _merchant.cardBack != nil && _merchant.cardFront != nil) {
+        _merchant.name = storeName;
+        _merchant.trueName = trueName;
+        _merchant.bankCard = bankCard;
+        _merchant.cardNum = idCard;
         AVUser * currentUser = [AVUser currentUser];
         AVObject * merchantObj = [[AVObject alloc] initWithClassName:@"Merchants"];
-        
+        [merchantObj setObject:currentUser forKey:@"owner"];
+        [merchantObj setObject:_merchant.name forKey:@"name"];
+        [merchantObj setObject:_merchant.protrait forKey:@"protrait"];
+        [merchantObj setObject:_merchant.phone forKey:@"phone"];
+        [merchantObj setObject:_merchant.cardNum forKey:@"cardNum"];
+        [merchantObj setObject:_merchant.cardFront forKey:@"cardFront"];
+        [merchantObj setObject:_merchant.cardBack forKey:@"cardBack"];
+        [merchantObj setObject:_merchant.bankCard forKey:@"bankCard"];
+        [merchantObj setObject:_merchant.password forKey:@"password"];
+        [merchantObj setObject:_merchant.email forKey:@"email"];
+        [merchantObj setObject:_merchant.trueName forKey:@"trueName"];
+        AVFile * protrainFile = [AVFile fileWithData:_merchant.protrait];
+        AVFile * frontFile = [AVFile fileWithData:_merchant.cardFront];
+        AVFile * backFile = [AVFile fileWithData:_merchant.cardBack];
+        [merchantObj setObject:protrainFile forKey:@"protrait"];
+        [merchantObj setObject:frontFile forKey:@"cardFront"];
+        [merchantObj setObject:backFile forKey:@"cardBack"];
+        [merchantObj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [ProgressHUD showSuccess:@"提交成功"];
+                ZZQTabBarViewController * tabBarVC = [[ZZQTabBarViewController alloc] init];
+                [self presentViewController:tabBarVC animated:YES completion:^{
+                    [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
+                }];
+            } else {
+                [ProgressHUD showError:@"保存出错，请重试"];
+            }
+        }];
     }else{
         [ProgressHUD showError:@"信息填写不全"];
     }
 }
+
+- (ZZQMerchant *)merchant{
+    if (!_merchant) {
+        _merchant = [[ZZQMerchant alloc] init];
+    }
+    return _merchant;
+}
+
+- (void)setNewMerchant:(ZZQMerchant *)merchant{
+    self.merchant = merchant;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_userCard resignFirstResponder];
+    [_userBankCard resignFirstResponder];
+    [_userTrueName resignFirstResponder];
+    [_storeName resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [_userCard resignFirstResponder];
+    [_userBankCard resignFirstResponder];
+    [_userTrueName resignFirstResponder];
+    [_storeName resignFirstResponder];
+    return YES;
+}
+
 - (void)dealloc
 {
     // reset appearance

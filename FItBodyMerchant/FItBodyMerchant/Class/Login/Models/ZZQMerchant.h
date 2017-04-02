@@ -28,6 +28,8 @@
 @property(nonatomic, copy)NSString * password;
 //商家邮箱
 @property(nonatomic, copy)NSString * email;
+//商家真实姓名
+@property(nonatomic, copy)NSString * trueName;
 
 
 @end

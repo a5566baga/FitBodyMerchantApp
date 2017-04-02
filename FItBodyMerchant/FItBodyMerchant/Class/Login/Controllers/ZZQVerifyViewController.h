@@ -10,6 +10,7 @@
 #import "ZZQMerchant.h"
 
 @interface ZZQVerifyViewController : ZZQBaseViewController
-//商家模型
-@property(nonatomic, strong)ZZQMerchant * merchant;
+
+- (void)setNewMerchant:(ZZQMerchant *)merchant;
+
 @end

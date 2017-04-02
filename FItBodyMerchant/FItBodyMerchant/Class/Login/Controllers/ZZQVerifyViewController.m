@@ -158,6 +158,7 @@
         _merchant.trueName = trueName;
         _merchant.bankCard = bankCard;
         _merchant.cardNum = idCard;
+        _merchant.isPassed = NO;
         AVUser * currentUser = [AVUser currentUser];
         AVObject * merchantObj = [[AVObject alloc] initWithClassName:@"Merchants"];
         [merchantObj setObject:currentUser forKey:@"owner"];
@@ -171,6 +172,7 @@
         [merchantObj setObject:_merchant.password forKey:@"password"];
         [merchantObj setObject:_merchant.email forKey:@"email"];
         [merchantObj setObject:_merchant.trueName forKey:@"trueName"];
+        [merchantObj setObject:_merchant forKey:@"isPassed"];
         AVFile * protrainFile = [AVFile fileWithData:_merchant.protrait];
         AVFile * frontFile = [AVFile fileWithData:_merchant.cardFront];
         AVFile * backFile = [AVFile fileWithData:_merchant.cardBack];
@@ -185,7 +187,7 @@
                     [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
                 }];
             } else {
-                [ProgressHUD showError:@"保存出错，请重试"];
+                [ProgressHUD showError:@"提交出错，请重试"];
             }
         }];
     }else{

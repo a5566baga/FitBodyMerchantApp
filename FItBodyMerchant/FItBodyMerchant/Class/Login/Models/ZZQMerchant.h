@@ -30,6 +30,7 @@
 @property(nonatomic, copy)NSString * email;
 //商家真实姓名
 @property(nonatomic, copy)NSString * trueName;
-
+//信息是否审核通过
+@property(nonatomic, assign)bool isPassed;
 
 @end

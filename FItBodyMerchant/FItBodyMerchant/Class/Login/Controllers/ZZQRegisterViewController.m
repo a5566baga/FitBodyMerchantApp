@@ -8,12 +8,15 @@
 
 #import "ZZQRegisterViewController.h"
 #import "ZZQVerifyViewController.h"
+#import "ZZQMerchant.h"
 
 @interface ZZQRegisterViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+//商家模型
+@property (nonatomic, strong)ZZQMerchant * merchant;
 
 @end
 
@@ -38,12 +41,16 @@
     user.password = _passwordTextField.text;
     user.mobilePhoneNumber = _phoneTextField.text;
     user.email = _emailTextField.text;
+    _merchant.phone = _phoneTextField.text;
+    _merchant.email = _emailTextField.text;
+    _merchant.password = _passwordTextField.text;
+    
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         if(succeeded){
             [ProgressHUD showSuccess:@"注册成功"];
             ZZQVerifyViewController * verifyVC = [[ZZQVerifyViewController alloc] init];
             [self presentViewController:verifyVC animated:YES completion:^{
-                
+                [verifyVC setMerchant:_merchant];
             }];
         }else{
             if (error.code == 125) {
@@ -58,6 +65,11 @@
         }
         
     }];
+    ZZQVerifyViewController * verifyVC = [[ZZQVerifyViewController alloc] init];
+    [self presentViewController:verifyVC animated:YES completion:^{
+        [verifyVC setMerchant:_merchant];
+     }];
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

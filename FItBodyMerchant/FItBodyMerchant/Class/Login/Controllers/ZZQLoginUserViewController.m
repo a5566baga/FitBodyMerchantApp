@@ -8,11 +8,14 @@
 
 #import "ZZQLoginUserViewController.h"
 #import "ZZQTabBarViewController.h"
+#import "ZZQLoginViewController.h"
+
 
 @interface ZZQLoginUserViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+
 
 @end
 
@@ -26,7 +29,9 @@
     _passwordTextField.delegate = self;
 }
 - (IBAction)close:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
+    ZZQLoginViewController * loginVC = [[ZZQLoginViewController alloc] init];
+    self.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:loginVC animated:YES completion:^{
         
     }];
 }

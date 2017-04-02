@@ -32,6 +32,7 @@
 		B57071231E8D2EE7003DE3F8 /* ZZQMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57071211E8D2EE7003DE3F8 /* ZZQMeViewController.xib */; };
 		B57071271E8D4EEB003DE3F8 /* ZZQVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57071251E8D4EEB003DE3F8 /* ZZQVerifyViewController.m */; };
 		B57071281E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57071261E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib */; };
+		B57072351E90A055003DE3F8 /* ZZQMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072341E90A055003DE3F8 /* ZZQMerchant.m */; };
 		CAA63AABB86CAA07697AF1A2 /* libPods-FItBodyMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,9 @@
 		B57071241E8D4EEB003DE3F8 /* ZZQVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQVerifyViewController.h; sourceTree = "<group>"; };
 		B57071251E8D4EEB003DE3F8 /* ZZQVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQVerifyViewController.m; sourceTree = "<group>"; };
 		B57071261E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQVerifyViewController.xib; sourceTree = "<group>"; };
+		B57072331E90A055003DE3F8 /* ZZQMerchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQMerchant.h; sourceTree = "<group>"; };
+		B57072341E90A055003DE3F8 /* ZZQMerchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQMerchant.m; sourceTree = "<group>"; };
+		B57072381E90B366003DE3F8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E0F6B5FFB0220B7DCAB672B5 /* Pods-FItBodyMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		F67672C85008100A0244640A /* Pods-FItBodyMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +242,8 @@
 		B57070E31E891CFF003DE3F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B57072331E90A055003DE3F8 /* ZZQMerchant.h */,
+				B57072341E90A055003DE3F8 /* ZZQMerchant.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,6 +384,27 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				de,
+				"es-MX",
+				es,
+				fi,
+				fr,
+				he,
+				"hi-IN",
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				"nl-NL",
+				nl,
+				"pt-PT",
+				pt,
+				ru,
+				sv,
+				tr,
+				"zh-Hant",
 			);
 			mainGroup = B57070AE1E87611A003DE3F8;
 			productRefGroup = B57070B81E87611A003DE3F8 /* Products */;
@@ -477,6 +504,7 @@
 				B57070F11E891CFF003DE3F8 /* ZZQNetAlertView.m in Sources */,
 				B57070F31E891CFF003DE3F8 /* AppDelegate.m in Sources */,
 				B57071071E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m in Sources */,
+				B57072351E90A055003DE3F8 /* ZZQMerchant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +515,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B57070C91E87611A003DE3F8 /* Base */,
+				B57072381E90B366003DE3F8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -593,6 +622,62 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FItBodyMerchant/Class/Other/ZZQPCH.pch";
 				INFOPLIST_FILE = FItBodyMerchant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AVOSCloud\"",
+					"-l\"AVOSCloudCrashReporting\"",
+					"-l\"AVOSCloudIM\"",
+					"-l\"CTAssetsPickerController\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"PureLayout\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+					"-O",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FItBodyMerchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -607,6 +692,62 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FItBodyMerchant/Class/Other/ZZQPCH.pch";
 				INFOPLIST_FILE = FItBodyMerchant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AVOSCloud\"",
+					"-l\"AVOSCloudCrashReporting\"",
+					"-l\"AVOSCloudIM\"",
+					"-l\"CTAssetsPickerController\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"PureLayout\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+					"-O",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FItBodyMerchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

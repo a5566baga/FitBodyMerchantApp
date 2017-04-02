@@ -21,6 +21,7 @@
 #import "MJRefresh.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import "ProgressHUD.h"
+#import "CTAssetsPickerController.h"
 
 //字体名字
 #define TITLE_FONT @"Songti SC"

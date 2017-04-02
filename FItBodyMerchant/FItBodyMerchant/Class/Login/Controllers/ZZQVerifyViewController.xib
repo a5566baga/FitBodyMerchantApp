@@ -13,6 +13,8 @@
             <connections>
                 <outlet property="cardBackBtn" destination="x8s-D0-6q9" id="KZ4-IM-jhH"/>
                 <outlet property="cardFrontBtn" destination="XbI-Ek-Rv8" id="arv-Hp-E9Q"/>
+                <outlet property="headImage" destination="PW2-Pb-arQ" id="j6n-CY-OyA"/>
+                <outlet property="headSmallImage" destination="Vaf-7v-m5e" id="UnH-1P-Rze"/>
                 <outlet property="storeName" destination="gFc-DJ-BIw" id="h2P-D4-vbm"/>
                 <outlet property="submitBtn" destination="oIW-mI-QiD" id="QMf-tO-pgo"/>
                 <outlet property="userBankCard" destination="EOQ-1v-wr3" id="4sg-IG-35j"/>
@@ -100,7 +102,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-D0-6q9">
                     <rect key="frame" x="195" y="495" width="160" height="90"/>
-                    <state key="normal" image="back"/>
+                    <state key="normal" backgroundImage="back"/>
                     <connections>
                         <action selector="cardBackAction:" destination="-1" eventType="touchUpInside" id="BTt-TU-ehm"/>
                     </connections>
@@ -169,7 +171,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="90" id="WNq-sA-Vx0"/>
                     </constraints>
-                    <state key="normal" image="front"/>
+                    <state key="normal" backgroundImage="front"/>
                     <connections>
                         <action selector="cardFrontAction:" destination="-1" eventType="touchUpInside" id="TMc-1N-bvA"/>
                     </connections>

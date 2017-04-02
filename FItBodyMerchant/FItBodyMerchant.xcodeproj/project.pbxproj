@@ -33,6 +33,8 @@
 		B57071271E8D4EEB003DE3F8 /* ZZQVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57071251E8D4EEB003DE3F8 /* ZZQVerifyViewController.m */; };
 		B57071281E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57071261E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib */; };
 		B57072351E90A055003DE3F8 /* ZZQMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072341E90A055003DE3F8 /* ZZQMerchant.m */; };
+		B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B570723D1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m */; };
+		B57072411E912FF0003DE3F8 /* ZZQMenus.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072401E912FF0003DE3F8 /* ZZQMenus.m */; };
 		CAA63AABB86CAA07697AF1A2 /* libPods-FItBodyMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,10 @@
 		B57072331E90A055003DE3F8 /* ZZQMerchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQMerchant.h; sourceTree = "<group>"; };
 		B57072341E90A055003DE3F8 /* ZZQMerchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQMerchant.m; sourceTree = "<group>"; };
 		B57072381E90B366003DE3F8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B570723C1E9128AA003DE3F8 /* ZZQHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQHomeTableViewCell.h; sourceTree = "<group>"; };
+		B570723D1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQHomeTableViewCell.m; sourceTree = "<group>"; };
+		B570723F1E912FF0003DE3F8 /* ZZQMenus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQMenus.h; sourceTree = "<group>"; };
+		B57072401E912FF0003DE3F8 /* ZZQMenus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQMenus.m; sourceTree = "<group>"; };
 		E0F6B5FFB0220B7DCAB672B5 /* Pods-FItBodyMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		F67672C85008100A0244640A /* Pods-FItBodyMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +205,8 @@
 		B57070DF1E891CFF003DE3F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B570723F1E912FF0003DE3F8 /* ZZQMenus.h */,
+				B57072401E912FF0003DE3F8 /* ZZQMenus.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +214,8 @@
 		B57070E01E891CFF003DE3F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B570723C1E9128AA003DE3F8 /* ZZQHomeTableViewCell.h */,
+				B570723D1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -494,6 +504,7 @@
 				B57070FF1E8BD875003DE3F8 /* ZZQRegisterViewController.m in Sources */,
 				B570711D1E8D2ECF003DE3F8 /* ZZQOrderViewController.m in Sources */,
 				B57071221E8D2EE7003DE3F8 /* ZZQMeViewController.m in Sources */,
+				B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */,
 				B57070F01E891CFF003DE3F8 /* ZZQBaseViewController.m in Sources */,
 				B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */,
 				B57071141E8BE663003DE3F8 /* ProgressHUD.m in Sources */,
@@ -504,6 +515,7 @@
 				B57070F11E891CFF003DE3F8 /* ZZQNetAlertView.m in Sources */,
 				B57070F31E891CFF003DE3F8 /* AppDelegate.m in Sources */,
 				B57071071E8BD8B0003DE3F8 /* ZZQLoginUserViewController.m in Sources */,
+				B57072411E912FF0003DE3F8 /* ZZQMenus.m in Sources */,
 				B57072351E90A055003DE3F8 /* ZZQMerchant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,6 +35,8 @@
 		B57072351E90A055003DE3F8 /* ZZQMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072341E90A055003DE3F8 /* ZZQMerchant.m */; };
 		B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B570723D1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m */; };
 		B57072411E912FF0003DE3F8 /* ZZQMenus.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072401E912FF0003DE3F8 /* ZZQMenus.m */; };
+		B57072481E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57072461E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m */; };
+		B57072491E91DD09003DE3F8 /* ZZQAddNewMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57072471E91DD09003DE3F8 /* ZZQAddNewMenuViewController.xib */; };
 		CAA63AABB86CAA07697AF1A2 /* libPods-FItBodyMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,9 @@
 		B570723D1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQHomeTableViewCell.m; sourceTree = "<group>"; };
 		B570723F1E912FF0003DE3F8 /* ZZQMenus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQMenus.h; sourceTree = "<group>"; };
 		B57072401E912FF0003DE3F8 /* ZZQMenus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQMenus.m; sourceTree = "<group>"; };
+		B57072451E91DD09003DE3F8 /* ZZQAddNewMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQAddNewMenuViewController.h; sourceTree = "<group>"; };
+		B57072461E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQAddNewMenuViewController.m; sourceTree = "<group>"; };
+		B57072471E91DD09003DE3F8 /* ZZQAddNewMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQAddNewMenuViewController.xib; sourceTree = "<group>"; };
 		E0F6B5FFB0220B7DCAB672B5 /* Pods-FItBodyMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		F67672C85008100A0244640A /* Pods-FItBodyMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FItBodyMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-FItBodyMerchant/Pods-FItBodyMerchant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +203,9 @@
 				B57071151E8D2EBA003DE3F8 /* ZZQHomeViewController.h */,
 				B57071161E8D2EBA003DE3F8 /* ZZQHomeViewController.m */,
 				B57071171E8D2EBA003DE3F8 /* ZZQHomeViewController.xib */,
+				B57072451E91DD09003DE3F8 /* ZZQAddNewMenuViewController.h */,
+				B57072461E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m */,
+				B57072471E91DD09003DE3F8 /* ZZQAddNewMenuViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +442,7 @@
 				B57071081E8BD8B0003DE3F8 /* ZZQLoginUserViewController.xib in Resources */,
 				B57071281E8D4EEB003DE3F8 /* ZZQVerifyViewController.xib in Resources */,
 				B57071131E8BE663003DE3F8 /* ProgressHUD.bundle in Resources */,
+				B57072491E91DD09003DE3F8 /* ZZQAddNewMenuViewController.xib in Resources */,
 				B57070CA1E87611A003DE3F8 /* LaunchScreen.storyboard in Resources */,
 				B570711E1E8D2ECF003DE3F8 /* ZZQOrderViewController.xib in Resources */,
 				B57071191E8D2EBA003DE3F8 /* ZZQHomeViewController.xib in Resources */,
@@ -504,6 +513,7 @@
 				B57070FF1E8BD875003DE3F8 /* ZZQRegisterViewController.m in Sources */,
 				B570711D1E8D2ECF003DE3F8 /* ZZQOrderViewController.m in Sources */,
 				B57071221E8D2EE7003DE3F8 /* ZZQMeViewController.m in Sources */,
+				B57072481E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m in Sources */,
 				B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */,
 				B57070F01E891CFF003DE3F8 /* ZZQBaseViewController.m in Sources */,
 				B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */,

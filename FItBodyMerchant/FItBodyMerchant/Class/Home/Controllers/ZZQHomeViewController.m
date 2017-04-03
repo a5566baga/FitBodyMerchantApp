@@ -8,6 +8,7 @@
 
 #import "ZZQHomeViewController.h"
 #import "ZZQMenus.h"
+#import "ZZQAddNewMenuViewController.h"
 
 @interface ZZQHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -41,8 +42,17 @@
 #pragma mark =========== 设置nav
 - (void)initNav{
     _addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_addBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    [_addBtn setImage:[UIImage imageNamed:@"nav_add"] forState:UIControlStateNormal];
+    [_addBtn setFrame:CGRectMake(0, 0, 25, 25)];
+    [_addBtn addTarget:self action:@selector(addNewMenuAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    _addItem = [[UIBarButtonItem alloc] initWithCustomView:_addBtn];
+    self.navigationItem.rightBarButtonItem = _addItem;
+}
+
+- (void)addNewMenuAction:(UIButton *)btn{
+    ZZQAddNewMenuViewController * addNewMenuVC = [[ZZQAddNewMenuViewController alloc] init];
+    [self.navigationController pushViewController:addNewMenuVC animated:YES];
 }
 
 #pragma mark
@@ -76,12 +86,12 @@
 #pragma mark
 #pragma mark ============ 初始化数据(初次加载)
 - (void)initForData{
-    
+    [_tableView.mj_header endRefreshing];
 }
 
 //下拉加载
 - (void)initForNewData{
-    
+    [_tableView.mj_footer endRefreshing];
 }
 
 #pragma mark

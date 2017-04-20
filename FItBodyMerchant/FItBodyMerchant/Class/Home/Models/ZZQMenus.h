@@ -26,6 +26,17 @@
 @property(nonatomic, copy)NSString * type;
 //简介
 @property(nonatomic, copy)NSString * context;
+//收藏人数
+@property(nonatomic, copy)NSString * favNum;
+//菜单id
+@property(nonatomic, copy)NSString * menuID;
+//所属店铺
+@property(nonatomic, copy)NSString * owner;
+@property(nonatomic, copy)NSString * merchantID;
+//创建时间
+@property(nonatomic, copy)NSString * createTime;
+
+- (ZZQMenus *)getMenuWithObject:(AVObject *)obj;
 
 
 @end

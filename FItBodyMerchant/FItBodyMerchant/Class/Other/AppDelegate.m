@@ -23,6 +23,7 @@
     [AVOSCloud setApplicationId:@"xqDPunJj8jQcQk8exktvw5UB-gzGzoHsz" clientKey:@"YqkYVhUj2pWRx4r7hQ3gmv1v"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+//    [AVUser logOut];
     //就是之前登陆了
     if ([AVUser currentUser]){
         //利用learnCloud再登录

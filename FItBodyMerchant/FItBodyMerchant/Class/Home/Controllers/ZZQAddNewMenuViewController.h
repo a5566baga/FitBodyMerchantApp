@@ -7,7 +7,10 @@
 //
 
 #import "ZZQBaseViewController.h"
+#import "ZZQMenus.h"
 
 @interface ZZQAddNewMenuViewController : ZZQBaseViewController
+
+- (void)setMenuModle:(ZZQMenus *)menu;
 
 @end

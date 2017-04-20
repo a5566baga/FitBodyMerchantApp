@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZZQMenus.h"
 
 @interface ZZQHomeTableViewCell : UITableViewCell
+
+- (void)setCellModel:(ZZQMenus *)menu index:(NSIndexPath *)index;
 
 @end

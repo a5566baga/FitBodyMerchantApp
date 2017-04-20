@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *leftTextFiedl;
 @property (weak, nonatomic) IBOutlet UITextField *typeTextFeild;
 @property (weak, nonatomic) IBOutlet UIImageView *portraitImage;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @property (nonatomic, strong) PHImageRequestOptions *requestOptions;
 @property (nonatomic, strong)CTAssetsPickerController * picker;
@@ -30,12 +31,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _menu = [[ZZQMenus alloc] init];
+    self.navigationItem.title = @"添加新的菜品";
+    _nameTextField.text = _menu.name;
+    _priceTextField.text = _menu.price;
+    _calorieTextField.text = _menu.calorie;
+    _leftTextFiedl.text = _menu.left;
+    _typeTextFeild.text = _menu.type;
+    _portraitImage.image = [UIImage imageWithData:_menu.portrait];
+    _textView.text = _menu.context;
 }
 - (IBAction)addPic:(UIButton *)sender {
     [self uploadPicWithTitle:@"菜品图片"];
 }
 - (IBAction)saveAction:(UIButton *)sender {
+    _menu = [[ZZQMenus alloc] init];
     _menu.name = _nameTextField.text;
     _menu.price = _priceTextField.text;
     _menu.calorie = _calorieTextField.text;
@@ -43,6 +52,7 @@
     _menu.orderedNum = @"0";
     _menu.type = _typeTextFeild.text;
     _menu.context = @"6666666666";
+    _menu.context = _textView.text;
     
     AVObject * menuObj = [AVObject objectWithClassName:@"Menus"];
     [menuObj setObject:[AVUser currentUser] forKey:@"owner"];
@@ -60,17 +70,18 @@
             [ProgressHUD showSuccess:@"添加成功"];
         }else{
             NSLog(@"%@", error);
+            [ProgressHUD showError:@"保存失败"];
         }
     }];
 }
+
+//选择最多的图片
 - (BOOL)assetsPickerController:(CTAssetsPickerController *)picker shouldSelectAsset:(PHAsset *)asset
 {
     NSInteger max = 1;
     if (picker.selectedAssets.count >= max)
     {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"注意"
-                                            message:[NSString stringWithFormat:@"请选择不要超过 %ld 张图片", (long)max]
-                                     preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"注意" message:[NSString stringWithFormat:@"请选择不要超过 %ld 张图片", (long)max] preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的"
                                  style:UIAlertActionStyleDefault
@@ -120,21 +131,26 @@
     [_nameTextField resignFirstResponder];
     [_priceTextField resignFirstResponder];
     [_typeTextFeild resignFirstResponder];
+    [_textView resignFirstResponder];
+}
+
+- (void)setMenuModle:(ZZQMenus *)menu{
+    _menu = menu;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

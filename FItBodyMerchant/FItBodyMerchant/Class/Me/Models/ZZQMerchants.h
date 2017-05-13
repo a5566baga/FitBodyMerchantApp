@@ -16,7 +16,7 @@
 @property(nonatomic, strong)NSData * firstPic;
 //第二张图片
 @property(nonatomic, strong)NSData * secendPic;
-//第三张图片
+//第三张图片
 @property(nonatomic, strong)NSData * thirdPic;
 //第四张图片
 @property(nonatomic, strong)NSData * fourthPic;

@@ -109,7 +109,7 @@
                 <constraint firstItem="MOK-d9-xJr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="poZ-M6-3FF"/>
                 <constraint firstItem="pfK-XX-ciW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uoF-2p-Lm7"/>
             </constraints>
-            <point key="canvasLocation" x="-211.5" y="-11.5"/>
+            <point key="canvasLocation" x="-214" y="-171"/>
         </view>
     </objects>
     <resources>

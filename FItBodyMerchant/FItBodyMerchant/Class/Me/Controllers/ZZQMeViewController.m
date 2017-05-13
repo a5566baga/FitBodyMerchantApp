@@ -45,7 +45,6 @@
     _tableView.bounces = NO;
     
     _headerView = [[ZZQMeHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
-//    _headerView.backgroundColor = [UIColor orangeColor];
     _tableView.tableHeaderView = _headerView;
     [_headerView setMerchantValue:_merchant];
     

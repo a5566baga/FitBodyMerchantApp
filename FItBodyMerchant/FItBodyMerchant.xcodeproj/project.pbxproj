@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52302D31EC845EE00DF7424 /* ZZQOrders.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302D01EC845EE00DF7424 /* ZZQOrders.m */; };
+		B52302D41EC845EE00DF7424 /* ZZQOrderTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302D21EC845EE00DF7424 /* ZZQOrderTemp.m */; };
+		B52302D71EC8462400DF7424 /* ZZQComments.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302D61EC8462400DF7424 /* ZZQComments.m */; };
+		B52302DA1EC8464D00DF7424 /* ZZQMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302D91EC8464D00DF7424 /* ZZQMenu.m */; };
+		B52302DD1EC8466F00DF7424 /* ZZQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DC1EC8466F00DF7424 /* ZZQUser.m */; };
+		B52302E01EC8468700DF7424 /* ZZQAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DF1EC8468700DF7424 /* ZZQAddress.m */; };
 		B57070BC1E87611A003DE3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070BB1E87611A003DE3F8 /* main.m */; };
 		B57070C71E87611A003DE3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57070C61E87611A003DE3F8 /* Assets.xcassets */; };
 		B57070CA1E87611A003DE3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57070C81E87611A003DE3F8 /* LaunchScreen.storyboard */; };
@@ -45,6 +51,18 @@
 
 /* Begin PBXFileReference section */
 		2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FItBodyMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52302CF1EC845EE00DF7424 /* ZZQOrders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQOrders.h; sourceTree = "<group>"; };
+		B52302D01EC845EE00DF7424 /* ZZQOrders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQOrders.m; sourceTree = "<group>"; };
+		B52302D11EC845EE00DF7424 /* ZZQOrderTemp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQOrderTemp.h; sourceTree = "<group>"; };
+		B52302D21EC845EE00DF7424 /* ZZQOrderTemp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQOrderTemp.m; sourceTree = "<group>"; };
+		B52302D51EC8462400DF7424 /* ZZQComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQComments.h; sourceTree = "<group>"; };
+		B52302D61EC8462400DF7424 /* ZZQComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQComments.m; sourceTree = "<group>"; };
+		B52302D81EC8464D00DF7424 /* ZZQMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQMenu.h; sourceTree = "<group>"; };
+		B52302D91EC8464D00DF7424 /* ZZQMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQMenu.m; sourceTree = "<group>"; };
+		B52302DB1EC8466F00DF7424 /* ZZQUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQUser.h; sourceTree = "<group>"; };
+		B52302DC1EC8466F00DF7424 /* ZZQUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQUser.m; sourceTree = "<group>"; };
+		B52302DE1EC8468700DF7424 /* ZZQAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQAddress.h; sourceTree = "<group>"; };
+		B52302DF1EC8468700DF7424 /* ZZQAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQAddress.m; sourceTree = "<group>"; };
 		B57070B71E87611A003DE3F8 /* FItBodyMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FItBodyMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57070BB1E87611A003DE3F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57070C61E87611A003DE3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +143,25 @@
 				2C64F67EF9D8D92922894204 /* libPods-FItBodyMerchant.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B52302CE1EC8445000DF7424 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B52302DE1EC8468700DF7424 /* ZZQAddress.h */,
+				B52302DF1EC8468700DF7424 /* ZZQAddress.m */,
+				B52302DB1EC8466F00DF7424 /* ZZQUser.h */,
+				B52302DC1EC8466F00DF7424 /* ZZQUser.m */,
+				B52302D81EC8464D00DF7424 /* ZZQMenu.h */,
+				B52302D91EC8464D00DF7424 /* ZZQMenu.m */,
+				B52302D51EC8462400DF7424 /* ZZQComments.h */,
+				B52302D61EC8462400DF7424 /* ZZQComments.m */,
+				B52302CF1EC845EE00DF7424 /* ZZQOrders.h */,
+				B52302D01EC845EE00DF7424 /* ZZQOrders.m */,
+				B52302D11EC845EE00DF7424 /* ZZQOrderTemp.h */,
+				B52302D21EC845EE00DF7424 /* ZZQOrderTemp.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		B57070AE1E87611A003DE3F8 = {
@@ -323,6 +360,7 @@
 		B57070E91E891CFF003DE3F8 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				B52302CE1EC8445000DF7424 /* Models */,
 				B570729B1EA8F397003DE3F8 /* Controllers */,
 				B570729C1EA8F3A8003DE3F8 /* Views */,
 			);
@@ -541,14 +579,20 @@
 			files = (
 				B57070F71E8BD46E003DE3F8 /* ZZQLoginViewController.m in Sources */,
 				B57070EF1E891CFF003DE3F8 /* ZZQBaseTabBar.m in Sources */,
+				B52302DA1EC8464D00DF7424 /* ZZQMenu.m in Sources */,
 				B57070FF1E8BD875003DE3F8 /* ZZQRegisterViewController.m in Sources */,
 				B570711D1E8D2ECF003DE3F8 /* ZZQOrderViewController.m in Sources */,
 				B57071221E8D2EE7003DE3F8 /* ZZQMeViewController.m in Sources */,
 				B57072A51EA905C7003DE3F8 /* ZZQMeHeaderView.m in Sources */,
 				B57072481E91DD09003DE3F8 /* ZZQAddNewMenuViewController.m in Sources */,
+				B52302D71EC8462400DF7424 /* ZZQComments.m in Sources */,
+				B52302D31EC845EE00DF7424 /* ZZQOrders.m in Sources */,
+				B52302E01EC8468700DF7424 /* ZZQAddress.m in Sources */,
+				B52302D41EC845EE00DF7424 /* ZZQOrderTemp.m in Sources */,
 				B570729F1EA8F3C1003DE3F8 /* ZZQOrdersTableViewCell.m in Sources */,
 				B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */,
 				B57070F01E891CFF003DE3F8 /* ZZQBaseViewController.m in Sources */,
+				B52302DD1EC8466F00DF7424 /* ZZQUser.m in Sources */,
 				B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */,
 				B57071141E8BE663003DE3F8 /* ProgressHUD.m in Sources */,
 				B57070BC1E87611A003DE3F8 /* main.m in Sources */,

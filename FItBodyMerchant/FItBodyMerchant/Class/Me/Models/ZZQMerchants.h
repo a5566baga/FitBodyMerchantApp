@@ -46,6 +46,8 @@
 @property(nonatomic, copy)NSString * startsNum;
 //所属用户
 @property(nonatomic, strong)AVUser * owner;
+//主键
+@property(nonatomic, copy)NSString * objId;
 
 /**
  * 设置对象内容

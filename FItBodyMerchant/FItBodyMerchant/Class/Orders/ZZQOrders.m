@@ -21,6 +21,7 @@
     order.orderStatus = [obj objectForKey:@"orderStatus"];
     order.createdAt = [obj objectForKey:@"createdAt"];
     order.updatedAt = [obj objectForKey:@"updatedAt"];
+    order.addressId = [obj objectForKey:@"addressId"];
     return order;
 }
 

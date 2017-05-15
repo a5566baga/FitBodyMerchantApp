@@ -13,6 +13,7 @@
 		B52302DA1EC8464D00DF7424 /* ZZQMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302D91EC8464D00DF7424 /* ZZQMenu.m */; };
 		B52302DD1EC8466F00DF7424 /* ZZQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DC1EC8466F00DF7424 /* ZZQUser.m */; };
 		B52302E01EC8468700DF7424 /* ZZQAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DF1EC8468700DF7424 /* ZZQAddress.m */; };
+		B52302E31EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */; };
 		B57070BC1E87611A003DE3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070BB1E87611A003DE3F8 /* main.m */; };
 		B57070C71E87611A003DE3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57070C61E87611A003DE3F8 /* Assets.xcassets */; };
 		B57070CA1E87611A003DE3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57070C81E87611A003DE3F8 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,8 @@
 		B52302DC1EC8466F00DF7424 /* ZZQUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQUser.m; sourceTree = "<group>"; };
 		B52302DE1EC8468700DF7424 /* ZZQAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQAddress.h; sourceTree = "<group>"; };
 		B52302DF1EC8468700DF7424 /* ZZQAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQAddress.m; sourceTree = "<group>"; };
+		B52302E11EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRecOrdersTableViewCell.h; sourceTree = "<group>"; };
+		B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRecOrdersTableViewCell.m; sourceTree = "<group>"; };
 		B57070B71E87611A003DE3F8 /* FItBodyMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FItBodyMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57070BB1E87611A003DE3F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57070C61E87611A003DE3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -411,6 +414,8 @@
 			children = (
 				B570729D1EA8F3C1003DE3F8 /* ZZQOrdersTableViewCell.h */,
 				B570729E1EA8F3C1003DE3F8 /* ZZQOrdersTableViewCell.m */,
+				B52302E11EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.h */,
+				B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -594,6 +599,7 @@
 				B57070F01E891CFF003DE3F8 /* ZZQBaseViewController.m in Sources */,
 				B52302DD1EC8466F00DF7424 /* ZZQUser.m in Sources */,
 				B57070F21E891CFF003DE3F8 /* ZZQTabBarViewController.m in Sources */,
+				B52302E31EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m in Sources */,
 				B57071141E8BE663003DE3F8 /* ProgressHUD.m in Sources */,
 				B57070BC1E87611A003DE3F8 /* main.m in Sources */,
 				B57071271E8D4EEB003DE3F8 /* ZZQVerifyViewController.m in Sources */,

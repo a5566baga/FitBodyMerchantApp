@@ -31,6 +31,8 @@
 @property(nonatomic, strong)NSDate * createdAt;
 /**更新时间*/
 @property(nonatomic, strong)NSDate * updatedAt;
+/**订单地址id*/
+@property(nonatomic, copy)NSString * addressId;
 
 - (ZZQOrders *)setOrdersForObj:(AVObject *)obj;
 

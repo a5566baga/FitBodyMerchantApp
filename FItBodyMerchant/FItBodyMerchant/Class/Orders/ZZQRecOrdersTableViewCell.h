@@ -11,6 +11,6 @@
 
 @interface ZZQRecOrdersTableViewCell : UITableViewCell
 
-- (void)setOrderModle:(ZZQOrders *)order;
+- (void)setOrderModle:(ZZQOrders *)order indexPath:(NSIndexPath *)index;
 
 @end

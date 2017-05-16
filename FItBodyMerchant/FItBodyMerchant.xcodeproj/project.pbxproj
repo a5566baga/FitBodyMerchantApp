@@ -14,6 +14,9 @@
 		B52302DD1EC8466F00DF7424 /* ZZQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DC1EC8466F00DF7424 /* ZZQUser.m */; };
 		B52302E01EC8468700DF7424 /* ZZQAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302DF1EC8468700DF7424 /* ZZQAddress.m */; };
 		B52302E31EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */; };
+		B52302E61ECAE4A400DF7424 /* ZZQCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302E51ECAE4A400DF7424 /* ZZQCommentTableViewCell.m */; };
+		B52302EA1ECAEFCF00DF7424 /* ZZQCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52302E81ECAEFCF00DF7424 /* ZZQCommentViewController.m */; };
+		B52302EB1ECAEFCF00DF7424 /* ZZQCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52302E91ECAEFCF00DF7424 /* ZZQCommentViewController.xib */; };
 		B57070BC1E87611A003DE3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57070BB1E87611A003DE3F8 /* main.m */; };
 		B57070C71E87611A003DE3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57070C61E87611A003DE3F8 /* Assets.xcassets */; };
 		B57070CA1E87611A003DE3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57070C81E87611A003DE3F8 /* LaunchScreen.storyboard */; };
@@ -66,6 +69,11 @@
 		B52302DF1EC8468700DF7424 /* ZZQAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQAddress.m; sourceTree = "<group>"; };
 		B52302E11EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRecOrdersTableViewCell.h; sourceTree = "<group>"; };
 		B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRecOrdersTableViewCell.m; sourceTree = "<group>"; };
+		B52302E41ECAE4A400DF7424 /* ZZQCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQCommentTableViewCell.h; sourceTree = "<group>"; };
+		B52302E51ECAE4A400DF7424 /* ZZQCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQCommentTableViewCell.m; sourceTree = "<group>"; };
+		B52302E71ECAEFCF00DF7424 /* ZZQCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQCommentViewController.h; sourceTree = "<group>"; };
+		B52302E81ECAEFCF00DF7424 /* ZZQCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQCommentViewController.m; sourceTree = "<group>"; };
+		B52302E91ECAEFCF00DF7424 /* ZZQCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZQCommentViewController.xib; sourceTree = "<group>"; };
 		B57070B71E87611A003DE3F8 /* FItBodyMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FItBodyMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57070BB1E87611A003DE3F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57070C61E87611A003DE3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -405,6 +413,9 @@
 				B570711A1E8D2ECF003DE3F8 /* ZZQOrderViewController.h */,
 				B570711B1E8D2ECF003DE3F8 /* ZZQOrderViewController.m */,
 				B570711C1E8D2ECF003DE3F8 /* ZZQOrderViewController.xib */,
+				B52302E71ECAEFCF00DF7424 /* ZZQCommentViewController.h */,
+				B52302E81ECAEFCF00DF7424 /* ZZQCommentViewController.m */,
+				B52302E91ECAEFCF00DF7424 /* ZZQCommentViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -416,6 +427,8 @@
 				B570729E1EA8F3C1003DE3F8 /* ZZQOrdersTableViewCell.m */,
 				B52302E11EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.h */,
 				B52302E21EC94AE300DF7424 /* ZZQRecOrdersTableViewCell.m */,
+				B52302E41ECAE4A400DF7424 /* ZZQCommentTableViewCell.h */,
+				B52302E51ECAE4A400DF7424 /* ZZQCommentTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -521,6 +534,7 @@
 				B570711E1E8D2ECF003DE3F8 /* ZZQOrderViewController.xib in Resources */,
 				B57071191E8D2EBA003DE3F8 /* ZZQHomeViewController.xib in Resources */,
 				B57070F81E8BD46E003DE3F8 /* ZZQLoginViewController.xib in Resources */,
+				B52302EB1ECAEFCF00DF7424 /* ZZQCommentViewController.xib in Resources */,
 				B57070C71E87611A003DE3F8 /* Assets.xcassets in Resources */,
 				B57071231E8D2EE7003DE3F8 /* ZZQMeViewController.xib in Resources */,
 				B57071001E8BD875003DE3F8 /* ZZQRegisterViewController.xib in Resources */,
@@ -593,6 +607,8 @@
 				B52302D71EC8462400DF7424 /* ZZQComments.m in Sources */,
 				B52302D31EC845EE00DF7424 /* ZZQOrders.m in Sources */,
 				B52302E01EC8468700DF7424 /* ZZQAddress.m in Sources */,
+				B52302E61ECAE4A400DF7424 /* ZZQCommentTableViewCell.m in Sources */,
+				B52302EA1ECAEFCF00DF7424 /* ZZQCommentViewController.m in Sources */,
 				B52302D41EC845EE00DF7424 /* ZZQOrderTemp.m in Sources */,
 				B570729F1EA8F3C1003DE3F8 /* ZZQOrdersTableViewCell.m in Sources */,
 				B570723E1E9128AA003DE3F8 /* ZZQHomeTableViewCell.m in Sources */,

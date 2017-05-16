@@ -11,6 +11,8 @@
 
 @interface ZZQOrdersTableViewCell : UITableViewCell
 
-- (void)setOrderModle:(ZZQOrders *)order;
+@property(nonatomic, copy)void(^btnBlock)(NSString * btnTitle, NSIndexPath * index);
+
+- (void)setOrderModle:(ZZQOrders *)order indexPath:(NSIndexPath *)index;
 
 @end
